@@ -52,3 +52,9 @@ createGrid();
 window.onresize = () => createGrid();
 
 window.scrollTo({top: 0, behavior: "smooth"});
+
+function home() {
+    document.getElementById("container").classList.remove("toggled");
+    document.getElementById("openMenu").checked = false;
+    window.scrollTo({top: 0, behavior: "smooth"});
+}
